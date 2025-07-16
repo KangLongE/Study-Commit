@@ -1,0 +1,52 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding:0px;
+    margin: 0px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.container{
+    position: relative;
+    top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 100px;
+}
+.id,.password,.password2{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #a29d9c;
+    background-color: #f3f4f6;
+}
+.id::placeholder,.password::placeholder,.password2::placeholder{
+    color: #afb0b2;
+}
+.signUp{
+    width: 600px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    background-color: #5656d1;
+}
