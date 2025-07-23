@@ -1,90 +1,67 @@
 body{
     width: 100%;
-    height: 100%;
-    position: relative;
-    margin: 0;
-}
-#map{
-    width: 100%;
     height: 100vh;
-    position: absolute;
-    z-index: 0;
-}
-.markerContainer, .window {
-  position: absolute;
-  z-index: 9;
+    padding:0px;
+    margin: 0px;
 }
 .background{
     width: 100%;
     height: 100vh;
     background-color: white;
 }
-.markerContainer{
-    position: absolute;
+.container{
+    position: relative;
+    top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 100px;
+}
+.id,.password{
+    width: 600px;
+    height: 70px;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #a29d9c;
+    background-color: #f3f4f6;
 }
-.locationMarker{
-    width: 50px;
-    height: auto;
-    pointer-events: auto;
+.id::placeholder,.password::placeholder{
+    color: #afb0b2;
 }
-.markerText{
-    position: absolute;
-    left: 45px;
-    display: none;
-    width: 170px;
-    height: 90px;
-    resize: none;
-    z-index: 7;
-}
-.X{
-    position: absolute;
-    top: -30px;
-    left:210px;
-    display: none;
-    z-index: 8;
-    color: #888888;
-    transition: 0.3s;
-}
-.X:hover{
-    color: red;
-}
-.window{
-    position: absolute;
-    top:0px;
+.complete{
+    width: 600px;
+    height: 60px;
     display: flex;
-    width: 0px;
-    height: 100vh;
-    background-color: aqua;
-    transition: 0.2s;
-    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    background-color: #5656d1;
 }
-.restaurant{
-    width: 400px;
-    height: 240px;
-    position: absolute;
-    top:0px;
-    right:0px;
-    transition: 0.5s;
-    z-index: 9;
-}
-.edit{
-    width: 40px;
+.twoHelp{
+    width: 590px;
     height: 40px;
-    position: absolute;
-    top:10px;
-    right:10px;
-    border: 1px solid black;
-    border-radius: 40px;
-    transition: 0.1s;
-    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 20px;
 }
-.edicon{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top:9px;
-    right:9px;
-    pointer-events: none;
+.signUp,.findPassword, .slash{
+    text-decoration: none;
+    margin: 0px 10px;
+    color:gray;
+    opacity: 60%;
 }
