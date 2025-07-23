@@ -27,7 +27,7 @@ document.addEventListener("contextmenu", function (e) {
 
     const textarea = document.createElement("textarea");
     textarea.className = "markerText";
-    textarea.placeholder = "이름\n영업시간";
+    textarea.placeholder = "이름\n영업시간\n위치\n기타 등등...";
 
     const closeBtn = document.createElement("button");
     closeBtn.textContent = "X";
